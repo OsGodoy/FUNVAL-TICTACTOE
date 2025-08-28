@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" id="todo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body class="h-screen w-screen bg-[#192a32] flex items-center justify-center ">
+    <div class="z-10 h-170 w-80 md:w-150 sm:h-200 sm:w-100 flex flex-col items-center justify-center p-4">
+        <header class= "h-[10%] w-[100%] md:w-[75%] flex items-center justify-between">
+            <div class="h-[60%] w-[28%] flex items-center justify-center">
+                <div class="flex items-center justify-start gap-2">
+                    <img class="size-[40%] sm:size-[30%]" src="img2/X-01.svg" alt="">
+                    <img class="size-[40%] sm:size-[30%]" src="img2/O-01.svg" alt="">
+                </div>
+            </div>
+            <div class="bg-[#1f3540] shadow-[0px_5px_0px_0px_#10222c] rounded-lg h-[60%] w-[30%] flex items-center justify-center">
+                <div class="flex items-center justify-center gap-2">
+                    <img class="size-[20%]" src="img2/X-2-01.svg" alt="">
+                    <p class="text-[#a8bec9] h-[50%] text-sm sm:text-lg font-medium">
+                        TURN
+                    </p>
+                </div>
+            </div>
+            <div class="h-[60%] w-[28%] flex items-center justify-end">
+                <div class="bg-[#a8bec9] shadow-[0px_5px_0px_0px_#617d8b] w-[55%] md:w-[48%] h-full rounded-lg flex items-center justify-center">
+                    <img class="size-[50%]" src="img2/CARGA-01.svg" alt="">
+                </div>
+            </div>
+        </header>
+        <main class="h-[80%] w-[100%] flex items-center justify-center">
+            <div class="w-full md:w-[75%] h-[80%] md:h-[95%] grid grid-cols-3 grid-rows-4 gap-3 md:gap-4">
+                <div class="dark:hidden hover:cursor-pointer hover:scale-105 flex h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] items-center justify-center" id="AcceptConditions">
+                </div>
+                <div class="hidden dark:flex bg-[#31c4be] h-[90%] rounded-xl shadow-[0px_8px_0px_0px_#10222c] items-center justify-center">
+                    <img class="size-[50%]" src="img2/X-3-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] dark:bg-[#31c4be] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="dark:hidden size-[50%]" src="img2/X-01.svg" alt="">
+                    <img class="hidden dark:flex size-[50%]" src="img2/X-3-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] dark:bg-[#31c4be] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="dark:hidden size-[50%]" src="img2/X-01.svg" alt="">
+                    <img class="hidden dark:flex size-[50%]" src="img2/X-3-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="size-[50%]" src="img2/X-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                </div>
+                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
+                    <img class="size-[50%]" src="img2/X-01.svg" alt="">
+                </div>
+                <div class="h-[60%] md:h-[55%] bg-[#31c4be] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
+                    <p class="text-sm sm:text-base font-medium h-[25%]">
+                        X (YOU)</p>
+                    <p class="text-xl sm:text-2xl font-bold">
+                        14
+                    </p>
+                </div>
+                <div class="h-[60%] md:h-[55%] bg-[#a8bec9] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
+                    <p class="text-sm sm:text-base font-medium h-[25%]">
+                        TIES
+                    </p>
+                    <p class="text-xl sm:text-2xl font-bold">
+                        32
+                    </p>
+                </div>
+                <div class="h-[60%] md:h-[55%] bg-[#f2b237] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
+                    <p class="text-sm sm:text-base font-medium h-[25%]">
+                        O (CPU)
+                    </p>
+                    <p class="text-xl sm:text-2xl font-bold">
+                        11
+                    </p>
+                </div>
+            </div>
+        </main>
+        <section class="bg-black/50 hidden z-20 dark:flex fixed h-screen w-screen items-center justify-center">
+            <div class="bg-[#1f3540] h-65 w-full relative bottom-5">
+                <div class="h-full w-full flex flex-col items-center justify-center gap-2">
+                    <p class="h-[10%] text-base font-bold text-[#a8bec9] flex items-end">
+                        YOU WON!
+                    </p>
+                    <div class="h-[25%] w-[90%] sm:w-[80%] flex items-center justify-center gap-2 sm:gap-4">
+                        <img class="size-6 sm:size-15" src="img2/X-01.svg" alt="">
+                        <p class="text-2xl sm:text-4xl font-bold text-[#31c4be]">
+                            TAKES THE ROUND
+                        </p>
+                    </div>
+                    <div  class="text-[#10222c] font-bold w-[90%] sm:w-[50%] h-[30%] flex items-center justify-center gap-4">
+                        <div class="bg-[#a8bec9] shadow-[0px_5px_0px_0px_#617d8b] rounded-lg h-12 w-18 flex items-center justify-center">
+                            <p>QUIT</p>
+                        </div>
+                        <div class="bg-[#f2b237] shadow-[0px_5px_0px_0px_#b37f19] rounded-lg h-12 w-35 flex items-center justify-center">
+                            <p>NEXT ROUND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        let todo= document.querySelector("#todo");
+        let boton= document.querySelector("#AcceptConditions");
+        boton.addEventListener("click",function() {
+            todo.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
