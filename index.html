@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" id="todo">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
-<body class="h-screen w-screen bg-[#192a32] flex items-center justify-center ">
-    <div class="z-10 h-170 w-80 md:w-150 sm:h-200 sm:w-100 flex flex-col items-center justify-center p-4">
+<body class="h-screen w-screen bg-[#192a32] flex items-center justify-center">
+    <div class="z-10 h-170 w-80 md:w-140 sm:h-200 sm:w-100 flex flex-col items-center justify-center p-4">
         <header class= "h-[10%] w-[100%] md:w-[75%] flex items-center justify-between">
             <div class="h-[60%] w-[28%] flex items-center justify-center">
                 <div class="flex items-center justify-start gap-2">
@@ -21,73 +22,90 @@
                     <p class="text-[#a8bec9] h-[50%] text-sm sm:text-lg font-medium">
                         TURN
                     </p>
+                    <img class="size-[20%]" src="img2/O-2-01-01.svg" alt="">
+                    <p class="text-[#a8bec9] h-[50%] text-sm sm:text-lg font-medium">
+                        TURN
+                    </p>
                 </div>
             </div>
             <div class="h-[60%] w-[28%] flex items-center justify-end">
-                <div class="bg-[#a8bec9] shadow-[0px_5px_0px_0px_#617d8b] w-[55%] md:w-[48%] h-full rounded-lg flex items-center justify-center">
+                <div class="bg-[#a8bec9] shadow-[0px_5px_0px_0px_#617d8b] w-[55%] md:w-[48%] h-full rounded-lg flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
                     <img class="size-[50%]" src="img2/CARGA-01.svg" alt="">
                 </div>
             </div>
         </header>
-        <main class="h-[80%] w-[100%] flex items-center justify-center">
-            <div class="w-full md:w-[75%] h-[80%] md:h-[95%] grid grid-cols-3 grid-rows-4 gap-3 md:gap-4">
-                <div class="dark:hidden hover:cursor-pointer hover:scale-105 flex h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] items-center justify-center" id="AcceptConditions">
+        <main class="h-[80%] sm:h-[70%] md:w-[75%] w-[100%] flex flex-col items-center justify-center">
+            <div class="w-full sm:h-[75%] md:w-full h-[60%] grid grid-cols-3 grid-rows-3 gap-3 md:gap-4">
+                <div class="cuadro1 h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="uno size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="dos size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="hidden dark:flex bg-[#31c4be] h-[90%] rounded-xl shadow-[0px_8px_0px_0px_#10222c] items-center justify-center">
-                    <img class="size-[50%]" src="img2/X-3-01.svg" alt="">
+                <div class="cuadro2 h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="uno size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="dos size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] dark:bg-[#31c4be] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="dark:hidden size-[50%]" src="img2/X-01.svg" alt="">
-                    <img class="hidden dark:flex size-[50%]" src="img2/X-3-01.svg" alt="">
+                <div id="cuadro" class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="1 size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="2 size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] dark:bg-[#31c4be] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="dark:hidden size-[50%]" src="img2/X-01.svg" alt="">
-                    <img class="hidden dark:flex size-[50%]" src="img2/X-3-01.svg" alt="">
+                <div id="cuadro" class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="1 size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="2 size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="size-[50%]" src="img2/X-01.svg" alt="">
+                <div id="cuadro" class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="1 size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="2 size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                <div id="cuadro" class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="1 size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="2 size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                <div id="cuadro" class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="1 size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="2 size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                <div id="cuadro" class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="1 size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="2 size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="size-[50%]" src="img2/O-01.svg" alt="">
+                <div id="cuadro" class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center transition duration-100 hover:cursor-pointer hover:scale-105">
+                    <img class="1 size-[50%] hidden" src="img2/X-01.svg" alt="">
+                    <img class="2 size-[50%] hidden" src="img2/O-01.svg" alt="">
                 </div>
-                <div class="h-[90%] bg-[#1f3540] rounded-xl shadow-[0px_8px_0px_0px_#10222c] flex items-center justify-center">
-                    <img class="size-[50%]" src="img2/X-01.svg" alt="">
-                </div>
-                <div class="h-[60%] md:h-[55%] bg-[#31c4be] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
+            </div>
+            <section class="w-full md:w-full flex items-center justify-between gap-3">
+                <div class="h-[80%] w-[30%] bg-[#31c4be] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
                     <p class="text-sm sm:text-base font-medium h-[25%]">
                         X (YOU)</p>
                     <p class="text-xl sm:text-2xl font-bold">
-                        14
+                    <p class="text-sm sm:text-base font-medium h-[25%]">
+                        X (CPU)</p>
+                    <p class="text-xl sm:text-2xl font-bold">
+                        0
                     </p>
                 </div>
-                <div class="h-[60%] md:h-[55%] bg-[#a8bec9] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
+                <div class="h-[80%] w-[30%] bg-[#a8bec9] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
                     <p class="text-sm sm:text-base font-medium h-[25%]">
                         TIES
                     </p>
                     <p class="text-xl sm:text-2xl font-bold">
-                        32
+                        0
                     </p>
                 </div>
-                <div class="h-[60%] md:h-[55%] bg-[#f2b237] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
+                <div class="h-[80%] w-[30%] bg-[#f2b237] text-[#10222c] rounded-xl flex flex-col items-center justify-center">
                     <p class="text-sm sm:text-base font-medium h-[25%]">
                         O (CPU)
                     </p>
+                    <p class="text-sm sm:text-base font-medium h-[25%]">
+                        O (YOU)
+                    </p>
                     <p class="text-xl sm:text-2xl font-bold">
-                        11
+                        0
                     </p>
                 </div>
-            </div>
+            </section>
         </main>
-        <section class="bg-black/50 hidden z-20 dark:flex fixed h-screen w-screen items-center justify-center">
+        <section class="bg-black/50 hidden z-20 fixed h-screen w-screen items-center justify-center">
             <div class="bg-[#1f3540] h-65 w-full relative bottom-5">
                 <div class="h-full w-full flex flex-col items-center justify-center gap-2">
                     <p class="h-[10%] text-base font-bold text-[#a8bec9] flex items-end">
@@ -111,12 +129,5 @@
             </div>
         </section>
     </div>
-    <script>
-        let todo= document.querySelector("#todo");
-        let boton= document.querySelector("#AcceptConditions");
-        boton.addEventListener("click",function() {
-            todo.classList.toggle("dark");
-        });
-    </script>
 </body>
 </html>
